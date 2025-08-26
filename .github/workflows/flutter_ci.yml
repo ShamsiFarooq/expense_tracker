@@ -1,0 +1,32 @@
+name: Flutter CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.29.3'   # 👈 pin to YOUR local version
+          channel: 'stable'
+
+      - name: Flutter pub get
+        run: flutter pub get
+
+      - name: Analyze (lint)
+        run: flutter analyze
+
+      - name: Enforce formatting
+        run: dart format --set-exit-if-changed .
+
+      - name: Run tests
+        run: flutter test
