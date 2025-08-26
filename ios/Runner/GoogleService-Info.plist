@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCIyKlsjrJ-Qi1i1WXFjvVm-vYH1kL2G-k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>171685597188</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.shamsi.foxus</string>
+	<key>PROJECT_ID</key>
+	<string>foxus-b2a4b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>foxus-b2a4b.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:171685597188:ios:3667ed7ce5204f22446551</string>
+</dict>
+</plist>
