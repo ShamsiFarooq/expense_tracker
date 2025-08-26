@@ -1,16 +1,50 @@
-# foxus
+#  Foxus – Personal Expense Tracker
 
-A new Flutter project.
+Foxus is a **Flutter-based expense tracker** designed to be **offline-first with cloud sync**.  
+It uses **Hive** for local storage, **Firebase Auth** for secure login, and **Firestore** for backup & multi-device sync.  
+The goal is to showcase **clean architecture, BLoC state management, pro UI/UX, and performance best practices**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features (MVP)
+- 📱 Phone authentication with Firebase
+-  Expense & income management (CRUD)
+-  Monthly dashboard with summary
+-  Search & filters (by category, date)
+-  Offline-first (Hive) + Firestore sync
+-  Light/Dark mode themes
+-  CSV export (shareable reports)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tech Stack
+- **Flutter**: 3.22.2 (stable)
+- **Dart**: 3.4.0
+- **State Management**: `flutter_bloc`
+- **Local Storage**: `hive`
+- **Cloud Sync**: Firebase Auth + Firestore
+- **Routing**: `go_router`
+- **Dependency Injection**: `get_it`
+- **CI/CD**: GitHub Actions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📂 Project Structure
+
+
+lib/
+app/
+config/ # Environment & constants
+router/ # go_router setup, route guards
+theme/ # Colors, typography, spacing
+di/ # Dependency injection setup
+core/ # Errors, results, utils
+features/
+auth/ # Login, OTP, Auth BLoC
+expenses/ # Expense CRUD, list, BLoC
+income/ # Income CRUD, list, BLoC
+dashboard/ # Summary, charts
+export/ # CSV export & sharing
+shared/
+widgets/ # Reusable UI components
+localization/ # Translations
