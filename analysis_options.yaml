@@ -22,19 +22,15 @@ linter:
   # producing the lint.
   rules:
     
-    avoid_print: true                
-    avoid_empty_else: true
-    avoid_relative_lib_imports: true 
-
+    always_use_package_imports: true
+    avoid_print: true
     prefer_const_constructors: true
-    prefer_const_declarations: true
-    prefer_single_quotes: true
-    always_declare_return_types: true
-
-    unnecessary_this: true
+    prefer_const_literals_to_create_immutables: true
     prefer_final_fields: true
-    sort_constructors_first: true
-    annotate_overrides: true
+    prefer_single_quotes: true
+    require_trailing_commas: true
+    unawaited_futures: true
+    use_super_parameters: true
     
     
 
