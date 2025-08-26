@@ -48,3 +48,4 @@ export/ # CSV export & sharing
 shared/
 widgets/ # Reusable UI components
 localization/ # Translations
+# ci trigger
