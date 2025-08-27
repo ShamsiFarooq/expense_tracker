@@ -5,7 +5,6 @@ import 'package:foxus/app/theme/app_typography.dart';
 import 'package:foxus/app/theme/app_spacing.dart';
 import 'package:foxus/app/theme/app_radius.dart';
 
-
 /// -------- LIGHT THEME --------
 ThemeData foxusLightTheme() {
   const scheme = ColorScheme(
