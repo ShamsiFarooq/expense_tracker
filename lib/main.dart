@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:foxus/app/theme/theme.dart';
 import 'package:foxus/firebase_options.dart';
 import 'package:foxus/presentation/pages/home_page.dart';
 
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Foxus',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      theme: foxusLightTheme(),
+      darkTheme: foxusDarkTheme(),
+      themeMode: ThemeMode.system,
       home: const HomePage(title: 'Foxus'),
     );
   }
