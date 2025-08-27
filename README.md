@@ -1,4 +1,7 @@
 #  Foxus – Personal Expense Tracker
+![CI](https://github.com/ShamsiFarooq/foxus/actions/workflows/ci.yml/badge.svg)
+
+
 
 Foxus is a **Flutter-based expense tracker** designed to be **offline-first with cloud sync**.  
 It uses **Hive** for local storage, **Firebase Auth** for secure login, and **Firestore** for backup & multi-device sync.  
