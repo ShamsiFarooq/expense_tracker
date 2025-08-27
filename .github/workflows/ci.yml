@@ -20,7 +20,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.2'   # ← change to your local Flutter version
+          flutter-version: '3.29.3'   # ← change to your local Flutter version
           channel: 'stable'
           cache: true
 
@@ -58,7 +58,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.2'   # ← same pinned version as above
+          flutter-version: '3.29.3'   # ← same pinned version as above
           channel: 'stable'
           cache: true
 
