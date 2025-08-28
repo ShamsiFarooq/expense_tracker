@@ -1,6 +1,5 @@
 import 'package:foxus/app/core/error/failure.dart';
 
-/// Result wrapper similar to Either<Failure, T>
 abstract class Result<T> {
   const Result();
 
