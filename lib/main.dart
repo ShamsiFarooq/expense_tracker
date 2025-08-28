@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:foxus/app/di/di_container.dart' show initDependencies;
 import 'package:foxus/app/router/app_router.dart';
 import 'package:foxus/app/theme/theme.dart';
 import 'package:foxus/firebase_options.dart';
@@ -12,6 +13,7 @@ void main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   _router = createAppRouter();
+  await initDependencies();
 
   runApp(const FoxusApp());
 }
