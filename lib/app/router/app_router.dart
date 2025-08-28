@@ -71,7 +71,6 @@ GoRouter createAppRouter() {
 
     // Routes
     routes: <RouteBase>[
-      
       GoRoute(
         name: AppRoute.splash.name,
         path: AppRoute.splash.path,
