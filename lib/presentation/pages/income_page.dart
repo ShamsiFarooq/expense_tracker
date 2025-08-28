@@ -8,8 +8,7 @@ class IncomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Income')),
-      body:  const Text('Income (stub)', style: AppTypography.bodyLarge),
-     
+      body: const Text('Income (stub)', style: AppTypography.bodyLarge),
     );
   }
 }

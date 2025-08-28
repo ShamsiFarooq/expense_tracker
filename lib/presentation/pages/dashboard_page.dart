@@ -19,39 +19,38 @@ class DashboardPage extends StatelessWidget {
           ),
         ],
       ),
-      body:  Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text('Dashboard (stub)', style: AppTypography.headlineMedium),
-            const SizedBox(height: AppSpacing.md),
-            Wrap(
-              spacing: AppSpacing.sm,
-              runSpacing: AppSpacing.sm,
-              children: [
-                ElevatedButton(
-                  onPressed: () => goToExpenses(context),
-                  child: const Text('Expenses'),
-                ),
-                ElevatedButton(
-                  onPressed: () => goToAddExpense(context),
-                  child: const Text('Add Expense'),
-                ),
-                ElevatedButton(
-                  onPressed: () => goToIncome(context),
-                  child: const Text('Income'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    authState.signOut();
-                    goToLogin(context);
-                  },
-                  child: const Text('Sign out'),
-                ),
-              ],
-            ),
-          ],
-        ),
-   
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text('Dashboard (stub)', style: AppTypography.headlineMedium),
+          const SizedBox(height: AppSpacing.md),
+          Wrap(
+            spacing: AppSpacing.sm,
+            runSpacing: AppSpacing.sm,
+            children: [
+              ElevatedButton(
+                onPressed: () => goToExpenses(context),
+                child: const Text('Expenses'),
+              ),
+              ElevatedButton(
+                onPressed: () => goToAddExpense(context),
+                child: const Text('Add Expense'),
+              ),
+              ElevatedButton(
+                onPressed: () => goToIncome(context),
+                child: const Text('Income'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  authState.signOut();
+                  goToLogin(context);
+                },
+                child: const Text('Sign out'),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

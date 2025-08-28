@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foxus/app/theme/app_typography.dart';
+
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
 
@@ -7,8 +8,7 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
-      body:  const Text('Settings (stub)', style: AppTypography.bodyLarge),
-    
+      body: const Text('Settings (stub)', style: AppTypography.bodyLarge),
     );
   }
 }

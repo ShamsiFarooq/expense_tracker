@@ -6,6 +6,7 @@ import 'package:foxus/app/router/route_names.dart';
 import 'package:foxus/app/theme/app_spacing.dart';
 import 'package:foxus/app/theme/app_typography.dart';
 import 'package:go_router/go_router.dart';
+
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 

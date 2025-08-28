@@ -8,8 +8,7 @@ class AddExpensePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Add Expense')),
-      body:  const Text('Add Expense (stub)', style: AppTypography.bodyLarge),
-      
+      body: const Text('Add Expense (stub)', style: AppTypography.bodyLarge),
     );
   }
 }

@@ -5,8 +5,6 @@ import 'package:foxus/app/theme/theme.dart';
 import 'package:foxus/firebase_options.dart';
 import 'package:go_router/go_router.dart';
 
-
-
 late final GoRouter _router;
 
 void main() async {
@@ -14,7 +12,6 @@ void main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   _router = createAppRouter();
-
 
   runApp(const FoxusApp());
 }
@@ -31,7 +28,7 @@ class FoxusApp extends StatelessWidget {
       theme: foxusLightTheme(),
       darkTheme: foxusDarkTheme(),
       themeMode: ThemeMode.system,
-     routerConfig: _router, 
+      routerConfig: _router,
     );
   }
 }

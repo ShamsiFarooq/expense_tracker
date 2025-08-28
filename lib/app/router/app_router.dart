@@ -10,8 +10,6 @@ import 'package:go_router/go_router.dart';
 
 import 'package:foxus/app/router/route_names.dart';
 
-
-
 /// ------------------------------------------------------------
 /// Stub auth state (Issue 3: routing proof only)
 /// ------------------------------------------------------------
@@ -109,7 +107,6 @@ GoRouter createAppRouter() {
         builder: (context, state) => const SettingsPage(),
       ),
     ],
-
   );
 }
 
@@ -119,17 +116,15 @@ GoRouter createAppRouter() {
 void goToDashboard(BuildContext context) =>
     context.goNamed(AppRoute.dashboard.name);
 
-void goToLogin(BuildContext context) =>
-    context.goNamed(AppRoute.login.name);
+void goToLogin(BuildContext context) => context.goNamed(AppRoute.login.name);
 
 void goToExpenses(BuildContext context) =>
     context.goNamed(AppRoute.expenses.name);
 
 void goToAddExpense(BuildContext context) =>
-    context.pushNamed(AppRoute.addExpense.name); 
+    context.pushNamed(AppRoute.addExpense.name);
 
-void goToIncome(BuildContext context) =>
-    context.goNamed(AppRoute.income.name);
+void goToIncome(BuildContext context) => context.goNamed(AppRoute.income.name);
 
 void goToSettings(BuildContext context) =>
     context.goNamed(AppRoute.settings.name);

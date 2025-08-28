@@ -18,8 +18,7 @@ class ExpenseListPage extends StatelessWidget {
           ),
         ],
       ),
-      body:  const Text('Expense List (stub)', style: AppTypography.bodyLarge),
-    
+      body: const Text('Expense List (stub)', style: AppTypography.bodyLarge),
     );
   }
 }
