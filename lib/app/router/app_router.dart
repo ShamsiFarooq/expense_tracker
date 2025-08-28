@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:foxus/presentation/pages/add_expense_page.dart';
-import 'package:foxus/presentation/pages/dashboard_page.dart';
-import 'package:foxus/presentation/pages/expense_list_page.dart';
-import 'package:foxus/presentation/pages/income_page.dart';
-import 'package:foxus/presentation/pages/login_page.dart';
-import 'package:foxus/presentation/pages/settings_page.dart';
-import 'package:foxus/presentation/pages/splash_page.dart';
+import 'package:foxus/features/expenses/presentation/pages/add_expense_page.dart';
+import 'package:foxus/features/dashboard/presentation/pages/dashboard_page.dart';
+import 'package:foxus/features/expenses/presentation/pages/expense_list_page.dart';
+import 'package:foxus/features/income/presentation/pages/income_page.dart';
+import 'package:foxus/features/auth/presentation/pages/login_page.dart';
+import 'package:foxus/features/settings/presentation/pages/settings_page.dart';
+import 'package:foxus/features/splash/presentation/pages/splash_page.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:foxus/app/router/route_names.dart';
@@ -71,6 +71,7 @@ GoRouter createAppRouter() {
 
     // Routes
     routes: <RouteBase>[
+      
       GoRoute(
         name: AppRoute.splash.name,
         path: AppRoute.splash.path,
