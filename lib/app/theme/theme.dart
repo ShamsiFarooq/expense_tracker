@@ -4,6 +4,7 @@ import 'package:foxus/app/theme/app_colors.dart';
 import 'package:foxus/app/theme/app_typography.dart';
 import 'package:foxus/app/theme/app_spacing.dart';
 import 'package:foxus/app/theme/app_radius.dart';
+import 'package:foxus/app/theme/app_transitions.dart';
 
 /// -------- LIGHT THEME --------
 ThemeData foxusLightTheme() {
@@ -43,7 +44,7 @@ ThemeData foxusLightTheme() {
       titleTextStyle: AppTypography.headlineMedium,
     ),
 
-    // Cards
+    // Cards - Use shadow tokens
     cardTheme: CardTheme(
       color: AppColors.surfaceLight,
       elevation: 0,
@@ -96,10 +97,10 @@ ThemeData foxusLightTheme() {
     // Icons
     iconTheme: const IconThemeData(color: AppColors.mutedLight),
 
-    // Animations
+    // Animations - Coordinated transitions using motion tokens
     pageTransitionsTheme: const PageTransitionsTheme(
       builders: {
-        TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
+        TargetPlatform.android: AppShellPageTransitionsBuilder(),
         TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
       },
     ),
@@ -197,10 +198,10 @@ ThemeData foxusDarkTheme() {
     // Icons
     iconTheme: const IconThemeData(color: AppColors.mutedDark),
 
-    // Animations
+    // Animations - Coordinated transitions using motion tokens
     pageTransitionsTheme: const PageTransitionsTheme(
       builders: {
-        TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
+        TargetPlatform.android: AppShellPageTransitionsBuilder(),
         TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
       },
     ),
